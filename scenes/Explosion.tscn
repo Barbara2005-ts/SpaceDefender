@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://bsb1kxce2ip2d"]
+
+[ext_resource type="Script" uid="uid://3yotbv5eg7ob" path="res://scripts/Explosion.gd" id="1_i4n8h"]
+[ext_resource type="Texture2D" uid="uid://dle41b63apjku" path="res://free-icon-explosion-616666.png" id="2_rux61"]
+
+[node name="Explosion" type="Node2D"]
+script = ExtResource("1_i4n8h")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-1.0000005, 1.9999995)
+scale = Vector2(0.24218746, 0.21093747)
+texture = ExtResource("2_rux61")

@@ -1,0 +1,22 @@
+res://scenes/player.tscn
+res://scenes/Player.gd
+res://scenes/Main.tscn
+res://scripts/Player.gd
+res://scenes/Bullet.tscn
+res://scripts/bullet.gd
+res://scenes/Bullet.gd
+res://scripts/Bullet.gd
+res://scenes/Enemy.tscn
+res://scenes/Enemy.gd
+res://scripts/EnemySpawner.gd
+res://scripts/Enemy.gd
+res://scenes/Hud.tscn
+res://scripts/HUD.gd
+res://scenes/Main.gd
+res://scenes/Explosion.tscn
+res://scenes/Explosion.gd
+res://scripts/Main.gd
+res://scenes/Player.tscn
+res://gitignore ..txt
+res://gitignore.txt
+res://README.md

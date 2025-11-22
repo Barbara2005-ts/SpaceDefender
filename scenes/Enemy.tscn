@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://dhhvvu3e86dnd"]
+
+[ext_resource type="Script" uid="uid://hjh6fpfirwvl" path="res://scripts/Enemy.gd" id="1_55jtl"]
+[ext_resource type="Texture2D" uid="uid://dvk10bxfxpe6i" path="res://free-icon-kraken-2534513.png" id="2_mpr68"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ft8do"]
+size = Vector2(249, 199)
+
+[node name="Enemy" type="Area2D" groups=["enemies"]]
+scale = Vector2(0.3, 0.3)
+script = ExtResource("1_55jtl")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.48046875, 0.42578125)
+texture = ExtResource("2_mpr68")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(1.5, 0.5)
+shape = SubResource("RectangleShape2D_ft8do")

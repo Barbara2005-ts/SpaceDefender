@@ -1,0 +1,24 @@
+[gd_scene load_steps=7 format=3 uid="uid://ymp55r5rgnoj"]
+
+[ext_resource type="Script" uid="uid://bkdojgnbpnaci" path="res://scripts/Main.gd" id="1_vcsgt"]
+[ext_resource type="Script" uid="uid://drdumpwisnble" path="res://scripts/EnemySpawner.gd" id="2_rvslj"]
+[ext_resource type="PackedScene" uid="uid://dhhvvu3e86dnd" path="res://scenes/Enemy.tscn" id="3_0bbpv"]
+[ext_resource type="PackedScene" uid="uid://bk3og5pu8wh0" path="res://scenes/Hud.tscn" id="5_c01mt"]
+[ext_resource type="PackedScene" uid="uid://b8he1jmgx2imf" path="res://scenes/Player.tscn" id="5_nxtc6"]
+[ext_resource type="Texture2D" uid="uid://b3wq6flbcpabq" path="res://i.webp" id="6_c01mt"]
+
+[node name="Main" type="Node2D"]
+script = ExtResource("1_vcsgt")
+
+[node name="see" type="Sprite2D" parent="."]
+position = Vector2(576, 323.99997)
+scale = Vector2(2.7259953, 2.05)
+texture = ExtResource("6_c01mt")
+
+[node name="EnemySpawner" type="Node2D" parent="."]
+script = ExtResource("2_rvslj")
+enemy_scene = ExtResource("3_0bbpv")
+
+[node name="Player" parent="." instance=ExtResource("5_nxtc6")]
+
+[node name="HUD" parent="." instance=ExtResource("5_c01mt")]
